@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700');
 
+:root {
+  --base: #21ce99;
+  --border: 0px;
+  --blur: 15px;
+}
+
 body {
   text-align: center;
   background: #1B1B1D;
@@ -10,6 +16,7 @@ body {
 
 .headline {
   margin-top: 20px;
+  font-weight: 600;
 }
 
 .tagline {
@@ -25,6 +32,13 @@ body {
 
 .eye-chart {
   margin-bottom: 20px;
+  padding: var(--border);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
 }
 
 input {
